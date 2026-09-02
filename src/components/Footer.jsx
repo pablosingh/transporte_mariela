@@ -11,13 +11,13 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-extrabold">TRANSPORTES EDGARDO</h3>
               <p className="text-[8px] tracking-[0.2em] text-[#60a5fa]">
-                TRANSPORTE DE CARGAS
+                TRANSPORTE DE CARGAS GENERALES
               </p>
             </div>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-slate-400">
-            Más de 15 años brindando soluciones logísticas
-            confiables y eficientes en todo el país.
+            Más de 12 años brindando soluciones logísticas
+            confiables y eficientes en toda la prov. de Buenos Aires.
           </p>
           <div className="mt-6 flex gap-4">
             <a href="https://www.instagram.com/transporteedgardoaguirre" target="_blank" rel="noreferrer">
@@ -41,12 +41,12 @@ export default function Footer() {
           <h3 className="font-bold text-sm tracking-wide">SERVICIOS</h3>
           <div className="mt-5 flex flex-col gap-3 text-sm text-slate-400">
             <span>Chasis</span>
-            <span>Balancín-Chasis</span>
-            <span>Acoplado-Semirremolque</span>
+            <span>Balancín</span>
+            <span>Chasis-Acoplado</span>
+            <span>Semirremolque</span>
             <span>Carga y Descarga con Autoelevador</span>
             <span>Alquiler de Autoelevador</span>
             <span>Transporte Terrestre</span>
-            <span>Carga Completa</span>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ export default function Footer() {
 
       <div className="border-t border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-6 py-5 text-xs text-slate-500 md:flex-row">
-          <span>© 2026 Mariela Transporte de Carga. Todos los derechos reservados.</span>
+          <span>© 2026 Transportes Edgardo. Todos los derechos reservados.</span>
           {/* <span>Desarrollado por pablosingh</span> */}
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Navbar() {
               TRANSPORTES EDGARDO
             </h1>
             <p className="text-[8px] font-bold tracking-[0.2em] text-[#60a5fa]">
-              TRANSPORTE DE CARGAS
+              TRANSPORTE DE CARGAS GENERALES
             </p>
           </div>
         </a>

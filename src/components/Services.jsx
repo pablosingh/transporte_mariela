@@ -11,12 +11,17 @@ const services = [
   },
   {
     icon: <ArrowUpDown size={32} />,
-    title: "Balancín-Chasis",
+    title: "Balancín",
     text: "Servicio de balancín para chasis y cargas especiales.",
   },
   {
     icon: <Car size={32} />,
-    title: "Acoplado-Semirremolque",
+    title: "Chasis-Acoplado",
+    text: "Traslado con acoplado y semirremolque.",
+  },
+  {
+    icon: <Car size={32} />,
+    title: "Semirremolque",
     text: "Traslado con acoplado y semirremolque.",
   },
   {
@@ -34,11 +39,11 @@ const services = [
     title: "Transporte Terrestre",
     text: "Cobertura en CABA y toda la Prov. de Buenos Aires.",
   },
-  {
-    icon: <Package size={32} />,
-    title: "Carga Completa",
-    text: "Traslado exclusivo para tu carga con máxima eficiencia.",
-  },
+  // {
+  //   icon: <Package size={32} />,
+  //   title: "Carga Completa",
+  //   text: "Traslado exclusivo para tu carga con máxima eficiencia.",
+  // },
   {
     isImageCard: true,
     image: bsasImg,
