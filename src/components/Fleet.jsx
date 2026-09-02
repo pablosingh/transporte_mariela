@@ -35,10 +35,10 @@ export default function Fleet() {
     setCurrent((c) => (c === fleetImages.length - 1 ? 0 : c + 1));
 
   return (
-    <section id="flota" className="bg-[#0f172a] py-24 text-white">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
+    <section id="flota" className="bg-[#0f172a] py-16 text-white md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+          <div className="text-center lg:text-left">
             <p className="text-sm font-bold tracking-[0.2em] text-[#60a5fa]">
               NUESTRA FLOTA
             </p>
@@ -47,7 +47,7 @@ export default function Fleet() {
               <br />
               para un servicio superior
             </h2>
-            <div className="mt-5 h-1 w-14 bg-[#60a5fa]" />
+            <div className="mx-auto mt-5 h-1 w-14 bg-[#60a5fa] lg:mx-0" />
             <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
               Contamos con camiones de última generación equipados
               con tecnología de rastreo satelital para garantizar
@@ -56,7 +56,7 @@ export default function Fleet() {
           </div>
 
           <div className="relative">
-            <div className="relative h-72 overflow-hidden rounded-xl md:h-80">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl md:aspect-[16/10]">
               {fleetImages.map((img, i) => (
                 <img
                   key={i}
@@ -71,25 +71,27 @@ export default function Fleet() {
 
             <button
               onClick={prev}
-              className="absolute -left-5 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-900 shadow-lg transition hover:bg-[#60a5fa] hover:text-white"
+              className="absolute left-2 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition hover:bg-[#60a5fa] md:-left-5 md:h-10 md:w-10 md:bg-white md:text-slate-900"
             >
-              <ChevronLeft size={20} />
+              <ChevronLeft size={18} />
             </button>
 
             <button
               onClick={next}
-              className="absolute -right-5 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-slate-900 shadow-lg transition hover:bg-[#60a5fa] hover:text-white"
+              className="absolute right-2 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition hover:bg-[#60a5fa] md:-right-5 md:h-10 md:w-10 md:bg-white md:text-slate-900"
             >
-              <ChevronRight size={20} />
+              <ChevronRight size={18} />
             </button>
 
-            <div className="mt-6 flex justify-center gap-2">
+            <div className="mt-4 flex items-center justify-center gap-1.5 md:gap-2">
               {fleetImages.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setCurrent(i)}
-                  className={`h-2.5 w-2.5 rounded-full transition ${
-                    i === current ? "bg-[#60a5fa]" : "bg-slate-600"
+                  className={`rounded-full transition ${
+                    i === current
+                      ? "h-2.5 w-2.5 bg-[#60a5fa]"
+                      : "h-2 w-2 bg-slate-600"
                   }`}
                 />
               ))}
