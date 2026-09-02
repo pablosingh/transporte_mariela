@@ -1,6 +1,7 @@
 import { Truck, Package, Container, ArrowUpDown, Car, Forklift, Wrench } from "lucide-react";
 import servicios1 from "../assets/servicios_01a.png";
 import servicios2 from "../assets/servicios_02a.png";
+import bsasImg from "../assets/bsas.png";
 
 const services = [
   {
@@ -38,6 +39,11 @@ const services = [
     title: "Carga Completa",
     text: "Traslado exclusivo para tu carga con máxima eficiencia.",
   },
+  {
+    isImageCard: true,
+    image: bsasImg,
+    title: "CABA y Bs As",
+  },
 ];
 
 export default function Services() {
@@ -60,22 +66,41 @@ export default function Services() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {services.map((service, i) => (
-            <div
-              key={i}
-              className="group rounded-xl border border-slate-200 bg-white p-8 text-center transition duration-300 hover:-translate-y-2 hover:border-[#1a365d]/30 hover:shadow-lg"
-            >
-              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#1a365d]/20 text-[#1a365d] transition group-hover:border-[#1a365d] group-hover:bg-[#1a365d] group-hover:text-white">
-                {service.icon}
+          {services.map((service, i) =>
+            service.isImageCard ? (
+              <div
+                key={i}
+                className="group relative overflow-hidden rounded-xl transition duration-300 hover:-translate-y-2 hover:shadow-lg"
+              >
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[#1a365d]/70 transition group-hover:bg-[#1a365d]/80" />
+                <div className="relative flex h-full min-h-[220px] flex-col items-center justify-center p-8 text-center">
+                  <h3 className="text-lg font-extrabold text-white">
+                    {service.title}
+                  </h3>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
-                {service.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate-500">
-                {service.text}
-              </p>
-            </div>
-          ))}
+            ) : (
+              <div
+                key={i}
+                className="group rounded-xl border border-slate-200 bg-white p-8 text-center transition duration-300 hover:-translate-y-2 hover:border-[#1a365d]/30 hover:shadow-lg"
+              >
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#1a365d]/20 text-[#1a365d] transition group-hover:border-[#1a365d] group-hover:bg-[#1a365d] group-hover:text-white">
+                  {service.icon}
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-500">
+                  {service.text}
+                </p>
+              </div>
+            )
+          )}
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
