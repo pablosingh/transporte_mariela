@@ -1,4 +1,5 @@
-import { Truck, Instagram, Facebook, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 export default function Footer() {
   return (
@@ -6,13 +7,11 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1a365d]">
-              <Truck size={22} className="text-white" />
-            </div>
+            <img src={logo} alt="Mariela Transporte" className="h-10 w-auto rounded-lg object-cover" />
             <div>
-              <h3 className="text-lg font-extrabold">MARIELA</h3>
+              <h3 className="text-lg font-extrabold">TRANSPORTES EDGARDO</h3>
               <p className="text-[8px] tracking-[0.2em] text-[#60a5fa]">
-                TRANSPORTE DE CARGA
+                TRANSPORTE DE CARGAS
               </p>
             </div>
           </div>
@@ -21,9 +20,9 @@ export default function Footer() {
             confiables y eficientes en todo el país.
           </p>
           <div className="mt-6 flex gap-4">
-            <Facebook size={18} className="cursor-pointer text-slate-400 hover:text-white transition" />
-            <Instagram size={18} className="cursor-pointer text-slate-400 hover:text-white transition" />
-            <Linkedin size={18} className="cursor-pointer text-slate-400 hover:text-white transition" />
+            <a href="https://www.instagram.com/transporteedgardoaguirre" target="_blank" rel="noreferrer">
+              <Instagram size={18} className="cursor-pointer text-slate-400 hover:text-white transition" />
+            </a>
           </div>
         </div>
 
@@ -41,10 +40,13 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-sm tracking-wide">SERVICIOS</h3>
           <div className="mt-5 flex flex-col gap-3 text-sm text-slate-400">
+            <span>Chasis</span>
+            <span>Balancín-Chasis</span>
+            <span>Acoplado-Semirremolque</span>
+            <span>Carga y Descarga con Autoelevador</span>
+            <span>Alquiler de Autoelevador</span>
             <span>Transporte Terrestre</span>
             <span>Carga Completa</span>
-            <span>Almacenamiento</span>
-            <span>Distribución</span>
           </div>
         </div>
 
@@ -53,15 +55,15 @@ export default function Footer() {
           <div className="mt-5 space-y-4 text-sm text-slate-400">
             <div className="flex gap-3">
               <Phone size={16} className="mt-0.5 shrink-0" />
-              <span>(11) 1234-5678</span>
+              <span>(11) 7136-6651</span>
             </div>
             <div className="flex gap-3">
               <Mail size={16} className="mt-0.5 shrink-0" />
-              <span>info@mariela.com.ar</span>
+              <span>transporte_edgardoa@hotmail.com</span>
             </div>
             <div className="flex gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0" />
-              <span>Buenos Aires, Argentina</span>
+              <span>José C. Paz, Buenos Aires, Argentina</span>
             </div>
           </div>
         </div>
@@ -69,8 +71,8 @@ export default function Footer() {
 
       <div className="border-t border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-6 py-5 text-xs text-slate-500 md:flex-row">
-          <span>© 2024 Mariela Transporte de Carga. Todos los derechos reservados.</span>
-          <span>Desarrollado por tuweb.com</span>
+          <span>© 2026 Mariela Transporte de Carga. Todos los derechos reservados.</span>
+          {/* <span>Desarrollado por pablosingh</span> */}
         </div>
       </div>
     </footer>

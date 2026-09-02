@@ -13,7 +13,7 @@ const benefits = [
   },
   {
     icon: <MapPin size={36} />,
-    title: "Cobertura Nacional",
+    title: "Cobertura en CABA y toda prov. de Buenos Aires",
     text: "Llegamos a donde tu negocio nos necesite.",
   },
   {
@@ -35,6 +35,9 @@ export default function Benefits() {
             Compromiso que genera confianza
           </h2>
           <div className="mx-auto mt-5 h-1 w-14 bg-[#1a365d]" />
+          <p className="mt-5 text-slate-500">
+            Somos especialistas en soluciones de transporte logístico, para sectores de alta exigencia como la industria automotriz, construcción y manejo de cargas sueltas especiales.
+          </p>
         </div>
 
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">

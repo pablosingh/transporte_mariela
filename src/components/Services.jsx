@@ -1,25 +1,42 @@
-import { Truck, Package, Warehouse, ClipboardCheck } from "lucide-react";
+import { Truck, Package, Container, ArrowUpDown, Car, Forklift, Wrench } from "lucide-react";
+import servicios1 from "../assets/servicios_01a.png";
+import servicios2 from "../assets/servicios_02a.png";
 
 const services = [
   {
+    icon: <Container size={32} />,
+    title: "Chasis",
+    text: "Transporte de chasis con unidades especializadas.",
+  },
+  {
+    icon: <ArrowUpDown size={32} />,
+    title: "Balancín-Chasis",
+    text: "Servicio de balancín para chasis y cargas especiales.",
+  },
+  {
+    icon: <Car size={32} />,
+    title: "Acoplado-Semirremolque",
+    text: "Traslado con acoplado y semirremolque.",
+  },
+  {
+    icon: <Forklift size={32} />,
+    title: "Carga y Descarga con Autoelevador",
+    text: "Operaciones de carga y descarga con autoelevador.",
+  },
+  {
+    icon: <Wrench size={32} />,
+    title: "Alquiler de Autoelevador",
+    text: "Alquiler de autoelevadores para tu operación.",
+  },
+  {
     icon: <Truck size={32} />,
     title: "Transporte Terrestre",
-    text: "Cobertura nacional con unidades modernas y monitoreo 24/7.",
+    text: "Cobertura en CABA y toda la Prov. de Buenos Aires.",
   },
   {
     icon: <Package size={32} />,
     title: "Carga Completa",
     text: "Traslado exclusivo para tu carga con máxima eficiencia.",
-  },
-  {
-    icon: <Warehouse size={32} />,
-    title: "Almacenamiento",
-    text: "Depósitos seguros para el resguardo de tu mercadería.",
-  },
-  {
-    icon: <ClipboardCheck size={32} />,
-    title: "Distribución",
-    text: "Entregas rápidas y seguras en todo el país.",
   },
 ];
 
@@ -36,12 +53,13 @@ export default function Services() {
           </h2>
           <div className="mx-auto mt-5 h-1 w-14 bg-[#1a365d]" />
           <p className="mt-5 text-slate-500">
-            Ofrecemos una amplia gama de servicios de transporte y
-            logística para adaptarnos a las necesidades de tu empresa.
+            Nos especializamos en transporte de carga terrestre, ofreciendo
+            unidades monitoreadas por GPS las 24 hs. Ofrecemos puntualidad
+            garantizada y tarifas competitivas que protegen tu margen de ganancia.
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {services.map((service, i) => (
             <div
               key={i}
@@ -58,6 +76,19 @@ export default function Services() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+          <img
+            src={servicios1}
+            alt="Servicio de transporte 1"
+            className="h-64 w-full rounded-xl object-cover"
+          />
+          <img
+            src={servicios2}
+            alt="Servicio de transporte 2"
+            className="h-64 w-full rounded-xl object-cover"
+          />
         </div>
       </div>
     </section>

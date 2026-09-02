@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Truck, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,15 +17,13 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 z-50 w-full bg-[#1a365d]">
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6">
         <a href="#inicio" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#60a5fa]">
-            <Truck size={22} className="text-white" />
-          </div>
+          <img src={logo} alt="Mariela Transporte" className="h-10 w-auto rounded-lg object-cover" />
           <div>
             <h1 className="text-lg font-extrabold tracking-tight text-white">
-              MARIELA
+              TRANSPORTES EDGARDO
             </h1>
             <p className="text-[8px] font-bold tracking-[0.2em] text-[#60a5fa]">
-              TRANSPORTE DE CARGA
+              TRANSPORTE DE CARGAS
             </p>
           </div>
         </a>
@@ -43,7 +42,7 @@ export default function Navbar() {
             href="#contacto"
             className="rounded-md bg-[#60a5fa] px-5 py-2.5 text-[13px] font-bold text-[#0f172a] transition hover:bg-[#93c5fd]"
           >
-            COTIZAR AHORA
+            CONTACTANOS
           </a>
         </nav>
 
@@ -73,7 +72,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="rounded-md bg-[#60a5fa] px-5 py-3 text-center text-sm font-bold text-[#0f172a]"
             >
-              COTIZAR AHORA
+              CONTACTANOS
             </a>
           </nav>
         </div>

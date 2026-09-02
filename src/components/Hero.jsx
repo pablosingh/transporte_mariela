@@ -1,5 +1,5 @@
 import { ArrowRight, Phone } from "lucide-react";
-import heroImg from "../assets/hero.jpg";
+import heroImg from "../assets/hero_2.png";
 
 export default function Hero() {
   return (

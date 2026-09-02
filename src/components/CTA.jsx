@@ -22,12 +22,12 @@ export default function CTA() {
           personalizado.
         </p>
         <a
-          href="https://wa.me/5491112345678"
+          href="https://wa.me/5491171366651"
           target="_blank"
           rel="noreferrer"
           className="mt-8 inline-flex rounded-md border-2 border-white bg-transparent px-8 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#0f172a]"
         >
-          COTIZAR AHORA
+          CONTACTANOS
         </a>
       </div>
     </section>

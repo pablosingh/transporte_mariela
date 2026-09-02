@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import carrusel1 from "../assets/carrusel_1.jpg";
-import carrusel2 from "../assets/carrusel_2.jpg";
-import carrusel3 from "../assets/carrusel_3.jpg";
+import flota1 from "../assets/flota_169/flota_00.png";
+import flota2 from "../assets/flota_169/flota_01.png";
+import flota3 from "../assets/flota_169/flota_02.png";
+import flota4 from "../assets/flota_169/flota_03.png";
+import flota5 from "../assets/flota_169/flota_04.png";
+import flota6 from "../assets/flota_169/flota_05.png";
+import flota7 from "../assets/flota_169/flota_06.png";
+import flota8 from "../assets/flota_169/flota_07.png";
 
-const fleetImages = [carrusel1, carrusel2, carrusel3];
+const fleetImages = [flota1, flota2, flota3, flota4, flota5, flota6, flota7, flota8];
 
 export default function Fleet() {
   const [current, setCurrent] = useState(0);
@@ -33,9 +38,6 @@ export default function Fleet() {
               con tecnología de rastreo satelital para garantizar
               la seguridad de tu carga.
             </p>
-            <button className="mt-8 rounded-md bg-white px-6 py-3 text-sm font-bold text-slate-900 transition hover:bg-[#60a5fa] hover:text-white">
-              VER FLOTA
-            </button>
           </div>
 
           <div className="relative">
