@@ -5,8 +5,8 @@ import flota2 from "../assets/flota_169/flota_01.png";
 import flota3 from "../assets/flota_169/flota_02.png";
 import flota4 from "../assets/flota_169/flota_03.png";
 import flota5 from "../assets/flota_169/flota_04.png";
-import flota6 from "../assets/flota_169/flota_05.png";
-import flota7 from "../assets/flota_169/flota_06.png";
+import flota6 from "../assets/flota_169/flota_05a.png";
+import flota7 from "../assets/flota_169/flota_06a.png";
 import flota8 from "../assets/flota_169/flota_07.png";
 
 const fleetImages = [flota1, flota2, flota3, flota4, flota5, flota6, flota7, flota8];

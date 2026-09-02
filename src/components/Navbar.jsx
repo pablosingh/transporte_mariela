@@ -39,7 +39,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="https://wa.me/5491171366651"
+            target="_blank"
+            rel="noreferrer"
             className="rounded-md bg-[#60a5fa] px-5 py-2.5 text-[13px] font-bold text-[#0f172a] transition hover:bg-[#93c5fd]"
           >
             CONTACTANOS
@@ -68,7 +70,9 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contacto"
+              href="https://wa.me/5491171366651"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setMenuOpen(false)}
               className="rounded-md bg-[#60a5fa] px-5 py-3 text-center text-sm font-bold text-[#0f172a]"
             >

@@ -10,10 +10,10 @@ export default function Hero() {
       <img
         src={heroImg}
         alt="Camión de transporte"
-        className="absolute inset-0 h-full w-full object-cover object-right"
+        className="absolute inset-0 h-full w-full object-cover object-center md:object-right"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent md:from-white md:via-white/60" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-20">
         <div className="max-w-xl">
@@ -42,7 +42,9 @@ export default function Hero() {
             </a>
 
             <a
-              href="#contacto"
+              href="https://wa.me/5491171366651"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center justify-center gap-2 rounded-md border-2 border-slate-800 bg-white/80 px-7 py-3.5 text-sm font-bold text-slate-800 transition hover:bg-slate-900 hover:text-white"
             >
               <Phone size={16} />
