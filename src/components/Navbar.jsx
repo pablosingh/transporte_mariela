@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-[#1a365d]">
+    <header className="fixed top-0 left-0 z-50 w-full bg-[#1a365d]" style={{ overflow: "visible" }}>
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6">
         <a href="#inicio" className="flex items-center gap-3">
           <img src={logo} alt="Mariela Transporte" className="h-10 w-auto rounded-lg object-cover" />
@@ -57,7 +57,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-white/10 bg-[#152c4a] px-6 py-5 md:hidden">
+        <div className="border-t border-white/10 bg-[#152c4a] px-6 md:hidden" style={{ paddingTop: "20px", paddingBottom: "48px" }}>
           <nav className="flex flex-col gap-4">
             {links.map((link) => (
               <a
