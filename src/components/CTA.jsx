@@ -1,4 +1,4 @@
-import contactoImg from "../assets/contacto.jpg";
+import contactoImg from "../assets/footer.png";
 
 export default function CTA() {
   return (
