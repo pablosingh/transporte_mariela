@@ -1,26 +1,26 @@
-import { Truck, Package, Container, ArrowUpDown, Car, Forklift, Wrench } from "lucide-react";
+import { Truck, MoveVertical, Box, Forklift, Wrench } from "lucide-react";
 import servicios1 from "../assets/servicios_01a.png";
 import servicios2 from "../assets/servicios_02a.png";
 import bsasImg from "../assets/bsas.png";
 
 const services = [
   {
-    icon: <Container size={32} />,
+    icon: <Truck size={32} />,
     title: "Chasis",
     text: "Transporte de chasis con unidades especializadas.",
   },
   {
-    icon: <ArrowUpDown size={32} />,
+    icon: <MoveVertical size={32} />,
     title: "Balancín",
     text: "Servicio de balancín para chasis y cargas especiales.",
   },
   {
-    icon: <Car size={32} />,
+    icon: <Truck size={32} />,
     title: "Chasis-Acoplado",
     text: "Traslado con acoplado y semirremolque.",
   },
   {
-    icon: <Car size={32} />,
+    icon: <Box size={32} />,
     title: "Semirremolque",
     text: "Traslado con acoplado y semirremolque.",
   },

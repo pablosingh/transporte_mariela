@@ -8,8 +8,23 @@ import flota5 from "../assets/flota_169/flota_04.png";
 import flota6 from "../assets/flota_169/flota_05a.png";
 import flota7 from "../assets/flota_169/flota_06a.png";
 import flota8 from "../assets/flota_169/flota_07.png";
+import flota9 from "../assets/flota_169_2/flota2_00.jpg";
+import flota10 from "../assets/flota_169_2/flota2_01.jpg";
+import flota11 from "../assets/flota_169_2/flota2_02.jpg";
+import flota12 from "../assets/flota_169_2/flota2_03.jpg";
+import flota13 from "../assets/flota_169_2/flota2_04.jpg";
+import flota14 from "../assets/flota_169_2/flota2_05.jpg";
+import flota15 from "../assets/flota_169_2/flota2_06.jpg";
+import flota16 from "../assets/flota_169_2/flota2_07.jpg";
+import flota17 from "../assets/flota_169_2/flota2_08.jpg";
+import flota18 from "../assets/flota_169_2/flota2_09.jpg";
+import flota19 from "../assets/flota_169_2/flota2_10.jpg";
+import flota20 from "../assets/flota_169_2/flota2_11.jpg";
+import flota21 from "../assets/flota_169_2/flota2_12.jpg";
+import flota22 from "../assets/flota_169_2/flota2_13.jpg";
+import flota23 from "../assets/flota_169_2/flota2_14.jpg";
 
-const fleetImages = [flota1, flota2, flota3, flota4, flota5, flota6, flota7, flota8];
+const fleetImages = [flota1, flota2, flota3, flota4, flota5, flota6, flota7, flota8, flota9, flota10, flota11, flota12, flota13, flota14, flota15, flota16, flota17, flota18, flota19, flota20, flota21, flota22, flota23];
 
 export default function Fleet() {
   const [current, setCurrent] = useState(0);
