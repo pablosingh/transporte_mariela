@@ -55,7 +55,10 @@ export default function Footer() {
           <div className="mt-5 space-y-4 text-sm text-slate-400">
             <div className="flex gap-3">
               <Phone size={16} className="mt-0.5 shrink-0" />
-              <span>(11) 7136-6651</span>
+              <div className="flex flex-col">
+                <span>(11) 7136-6651</span>
+                <span>(11) 6002-8351</span>
+              </div>
             </div>
             <div className="flex gap-3">
               <Mail size={16} className="mt-0.5 shrink-0" />
@@ -63,7 +66,7 @@ export default function Footer() {
             </div>
             <div className="flex gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0" />
-              <span>José C. Paz, Buenos Aires, Argentina</span>
+              <span>Zona Norte, Buenos Aires, Argentina</span>
             </div>
           </div>
         </div>
