@@ -8,7 +8,8 @@ export default function CTA() {
     >
       <img
         src={contactoImg}
-        alt=""
+        alt="Contacto Transportes Edgardo"
+        loading="lazy"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-[#0f172a]/75" />

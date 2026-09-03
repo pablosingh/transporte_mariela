@@ -80,6 +80,7 @@ export default function Services() {
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-[#1a365d]/70 transition group-hover:bg-[#1a365d]/80" />
@@ -111,12 +112,14 @@ export default function Services() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           <img
             src={servicios1}
-            alt="Servicio de transporte 1"
+            alt="Operación de transporte de carga con autoelevador"
+            loading="lazy"
             className="h-64 w-full rounded-xl object-cover"
           />
           <img
             src={servicios2}
-            alt="Servicio de transporte 2"
+            alt="Flota de camiones de Transportes Edgardo"
+            loading="lazy"
             className="h-64 w-full rounded-xl object-cover"
           />
         </div>

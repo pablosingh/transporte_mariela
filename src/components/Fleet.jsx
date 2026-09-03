@@ -61,7 +61,8 @@ export default function Fleet() {
                 <img
                   key={i}
                   src={img}
-                  alt={`Camión ${i + 1}`}
+                  alt={`Camión de Transportes Edgardo - Unidad ${i + 1}`}
+                  loading={i === 0 ? "eager" : "lazy"}
                   className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
                     i === current ? "opacity-100" : "opacity-0"
                   }`}

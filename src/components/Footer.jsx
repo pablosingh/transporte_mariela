@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Mariela Transporte" className="h-10 w-auto rounded-lg object-cover" />
+            <img src={logo} alt="Transportes Edgardo" className="h-10 w-auto rounded-lg object-cover" />
             <div>
               <h3 className="text-lg font-extrabold">TRANSPORTES EDGARDO</h3>
               <p className="text-[8px] tracking-[0.2em] text-[#60a5fa]">

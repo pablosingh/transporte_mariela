@@ -17,7 +17,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 z-50 w-full bg-[#1a365d]">
       <div className="mx-auto flex min-h-[72px] max-w-7xl items-center justify-between px-6">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo} alt="Mariela Transporte" className="h-10 w-auto rounded-lg object-cover" />
+          <img src={logo} alt="Transportes Edgardo" className="h-10 w-auto rounded-lg object-cover" />
           <div>
             <h1 className="text-lg font-extrabold tracking-tight text-white">
               TRANSPORTES EDGARDO
